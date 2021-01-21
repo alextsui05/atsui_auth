@@ -6,6 +6,7 @@ ruby '3.0.0'
 gem 'devise'
 gem 'doorkeeper'
 gem 'doorkeeper-jwt'
+gem 'rack-cors', require: 'rack/cors'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'

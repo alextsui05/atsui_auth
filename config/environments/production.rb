@@ -69,6 +69,10 @@ Rails.application.configure do
     protocol: 'https',
   }
 
+  config.action_mailer.smtp_settings = {
+    openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
+  }
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
